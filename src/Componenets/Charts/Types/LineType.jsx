@@ -91,6 +91,10 @@ const data = {
     
   ]
 };
+const options = {
+  maintainAspectRatio: false,	// Don't maintain w/h ratio
+ responsive :true
+};
 
 class LineType extends Component {
   constructor(props) {
@@ -116,7 +120,7 @@ class LineType extends Component {
     return (
       <div>
         <h2>Line Example</h2>
-        <Line data={data} />
+        <Line data={data}  options={options}/>
       </div>
     );
   }

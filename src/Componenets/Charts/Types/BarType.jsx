@@ -91,6 +91,10 @@ const data = {
     
   ]
 };
+const options = {
+  maintainAspectRatio: false,	// Don't maintain w/h ratio
+ responsive :true
+};
 
 class BarType extends Component {
   constructor(props) {
@@ -119,9 +123,7 @@ class BarType extends Component {
       <Bar
         data={data}
        
-        options={{
-          maintainAspectRatio: false
-        }}
+        options={options}
       />
     </div>
     );
